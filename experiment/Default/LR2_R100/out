@@ -1,0 +1,63 @@
+Options for the verification:
+  Generating no trace
+  Search order is breadth first
+  Using conservative space optimisation
+  Seed is 1683311030
+  State space representation uses minimal constraint systems with future testing
+  Using HashMap + Compress integers for discrete state storage
+
+Verifying formula 1 at /home/asger/Code/OilPump/Default/PreShielded.q:4
+ -- Formula is satisfied.
+(101 runs)
+Learning statistics for best strategy: 
+	Number of resets: 0
+	Number of iterations in last reset: 1
+	Number of iterations in total: 1
+
+
+
+Verifying formula 2 at /home/asger/Code/OilPump/Default/PreShielded.q:7
+ -- Formula is satisfied.
+$v_gameInfoCounterPlay
+
+
+Verifying formula 3 at /home/asger/Code/OilPump/Default/PreShielded.q:10
+ -- Formula is satisfied.
+(1000 runs) E(max) = 911.664 ± 0.360065 (95% CI)
+
+Values in [896.375,940.097] mean=911.664 steps=1.36629: 4 6 13 15 35 39 53 68 80 76 95 104 82 68 75 56 50 29 16 15 9 5 4 1 1 0 0 0 0 0 0 1
+
+Verifying formula 4 at /home/asger/Code/OilPump/Default/PreShielded.q:13
+ -- Formula is satisfied.
+(1000 runs) E(max) = ≈ 0
+
+Values in [0,0] mean=0 steps=1: 1000
+
+Verifying formula 5 at /home/asger/Code/OilPump/Default/PreShielded.q:16
+ -- Formula is satisfied.
+(1000 runs) E(max) = ≈ 0
+
+Values in [0,0] mean=0 steps=1: 1000
+	Command being timed: "/home/asger/Code/OilPump/uppaal-4.1.20-stratego-10-linux64/bin/verifyta.sh -s --good-runs 100 --total-runs 100 --max-iterations 1 --eval-runs 1 --qlearning-alpha 2 /home/asger/Code/OilPump/Default/OP__PreShielded.xml /home/asger/Code/OilPump/Default/PreShielded.q"
+	User time (seconds): 84.78
+	System time (seconds): 0.01
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:24.80
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 17700
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 2695
+	Voluntary context switches: 7
+	Involuntary context switches: 525
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 24
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
