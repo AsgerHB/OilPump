@@ -4,7 +4,7 @@
 strategy PreShielded = minE (aov) [<=120] {p} -> {t, v}: <> elapsed >= 120
 
 /* formula 2 */
-saveStrategy("/home/asger/Results/fig-OPShieldingResultsGroup/Query Results/PreShielded.strategy.json", PreShielded)
+saveStrategy("./PreShielded.strategy.json", PreShielded)
 
 /* formula 3 */
 E[<=120;1000] (max:aov) under PreShielded

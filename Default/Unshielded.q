@@ -5,7 +5,7 @@
 strategy Deterrence1000 = minE (aov + number_deaths*1000 ) [<=120] {p} -> {t, v}: <> elapsed >= 120
 
 /* formula 2 */
-saveStrategy("/home/asger/Results/fig-OPShieldingResultsGroup/Query Results/Deterrence1000.strategy.json", Deterrence1000)
+saveStrategy("./Deterrence1000.strategy.json", Deterrence1000)
 
 /* formula 3 */
 E[<=120;1000] (max:aov) under Deterrence1000
@@ -20,7 +20,7 @@ E[<=120;2] (max:0)
 strategy Deterrence100 = minE (aov + number_deaths*100 ) [<=120] {p} -> {t, v}: <> elapsed >= 120
 
 /* formula 7 */
-saveStrategy("/home/asger/Results/fig-OPShieldingResultsGroup/Query Results/Deterrence100.strategy.json", Deterrence100)
+saveStrategy("./Deterrence100.strategy.json", Deterrence100)
 
 /* formula 8 */
 E[<=120;1000] (max:aov) under Deterrence100
@@ -35,7 +35,7 @@ E[<=120;2] (max:0)
 strategy Deterrence10 = minE (aov + number_deaths*10 ) [<=120] {p} -> {t, v}: <> elapsed >= 120
 
 /* formula 12 */
-saveStrategy("/home/asger/Results/fig-OPShieldingResultsGroup/Query Results/Deterrence10.strategy.json", Deterrence10)
+saveStrategy("./Deterrence10.strategy.json", Deterrence10)
 
 /* formula 13 */
 E[<=120;1000] (max:aov) under Deterrence10
@@ -50,7 +50,7 @@ E[<=120;2] (max:0)
 strategy Deterrence0 = minE (aov + number_deaths*0 ) [<=120] {p} -> {t, v}: <> elapsed >= 120
 
 /* formula 17 */
-saveStrategy("/home/asger/Results/fig-OPShieldingResultsGroup/Query Results/Deterrence0.strategy.json", Deterrence0)
+saveStrategy("./Deterrence0.strategy.json", Deterrence0)
 
 /* formula 18 */
 E[<=120;1000] (max:aov) under Deterrence0
