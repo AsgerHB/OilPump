@@ -14,5 +14,5 @@ echo $JOBS
 
 if [[ $EXECUTOR ]] # If we are using slurm...
 then
-    $EXECUTOR --dependency=afterany:$JOBS ./when_done.sh
+    $EXECUTOR --dependency=afterany$JOBS ./when_done.sh
 fi
