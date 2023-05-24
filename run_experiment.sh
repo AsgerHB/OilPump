@@ -3,7 +3,7 @@
 export NAME=Default
 export JOBS=""
 
-for RUNS in 10 20 30 -1 ; do # 48000 96000 192000 384000 ; do
+for RUNS in 12000 24000 48000 96000 192000 384000 ; do
     export LR=$LR
     export RUNS=$RUNS
     if [[ $EXECUTOR ]]
