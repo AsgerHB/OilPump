@@ -21,7 +21,7 @@ const double v_min = 4.9;
 const double v_max = 25.1; 
 
 // Shielding
-import "libopshield/libopshield.so"
+import "//nfs/home/cs.aau.dk/oq82yk/OilPump/libopshield/libopshield.so" 
 {
     int get_value(double t, double v, int p, double l);
 };
