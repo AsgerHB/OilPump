@@ -4,8 +4,8 @@ import re
 def read_query_results(query_results_dir, output):
     dropped_rows = 0
     # CSV header. Spacings found experimentally.
-    print("     LR;       R;       cost;   deaths;  interventions", file=output)
-    configurations = os.listdir(query_results_dir)
+    print("      R;     cost;   deaths;  interventions", file=output)
+    configurations =  [dir for dir in os.listdir(query_results_dir) if os.path.isdir(os.path.join(query_results_dir, dir))]
     for configuration in configurations:
         cell_width = 7 # Min number of characters a data entry should occupy
         
@@ -51,8 +51,8 @@ def get_results(base_path, folder):
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument("--query-results-dir", help="Directory of query results created by run_experiment.sh", default="~/Q-PART/experiment/BB")
-    parser.add_argument("--output-file", help="Where the csv summary is saved", default="~/Q-PART/experiment/BB.csv")
+    parser.add_argument("--query-results-dir", help="Directory of query results created by run_experiment.sh", default="experiment/Default")
+    parser.add_argument("--output-file", help="Where the csv summary is saved", default="experiment/Default/data.csv")
     args = parser.parse_args()
 
     # print(get_results("/home/asger/BB", "AV0_AP0_GV20_GP10_R100"))
