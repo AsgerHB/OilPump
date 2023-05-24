@@ -6,8 +6,13 @@ export JOBS=""
 for RUNS in 10 20 30 -1 ; do # 48000 96000 192000 384000 ; do
     export LR=$LR
     export RUNS=$RUNS
-    JOB=$($EXECUTOR ./run_single.sh | awk '{print $4}')  # Submit job and extract its ID
-    JOBS="${JOBS}:${JOB}"
+    if [[ $EXECUTOR ]]
+    then
+        JOB=$($EXECUTOR ./run_single.sh | awk '{print $4}')  # Submit job and extract its ID
+        JOBS="${JOBS}:${JOB}"
+    else
+        ./run_single.sh
+    fi
 done
 
 echo $JOBS
